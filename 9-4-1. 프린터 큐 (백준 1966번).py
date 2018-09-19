@@ -16,7 +16,7 @@ for i in range(testCaseNum):
     for j in range(N):
 
 
-        for k in range(1, N):
+        for k in range(1, len(importance)):
             if importance[0] < importance [k]:
                 temp = importance[0]
                 importance.remove(temp)
