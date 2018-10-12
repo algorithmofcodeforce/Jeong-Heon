@@ -1,0 +1,57 @@
+package codeForce_10월_1주차;
+
+import java.util.Scanner;
+
+public class CodeForce_10월_1주차_4번_일곱난쟁이_백준2309번 {
+
+	public static void main(String[] args) {
+
+		int[] inputArray = new int[9];
+
+		Scanner s = new Scanner(System.in);
+		for (int i = 0; i < 9; i++) {
+
+			inputArray[i] = s.nextInt();
+
+		}
+
+		for (int i : inputArray)
+			System.out.println(i);
+
+		while (true) {
+			int[] answerArray = new int[7];
+			int[] randomArray = new int[7];
+			boolean b_r = false;
+
+			for (int i = 0; i < 7; i++) {
+
+				while (true) {
+					int r = (int) (Math.random() * 9) + 1;
+					System.out.println(r);
+
+					for (int j : randomArray) {
+
+						if (randomArray[i] == r) {
+							b_r = false;
+							break;
+
+						} else {
+							b_r = true;
+						}
+					}
+
+					if (b_r)
+						break;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// 자바 어려워
+// 배열 추가, 검색 이런것도 배웠었나??
