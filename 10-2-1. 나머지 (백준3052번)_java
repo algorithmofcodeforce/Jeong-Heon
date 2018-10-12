@@ -1,0 +1,35 @@
+package codeForce_10월_2주차;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CodeForce_10월_2주차_1번_나머지_백준3052번 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int r[] = new int[10];
+
+		for (int i = 0; i < 10; i++) {
+
+			r[i] = sc.nextInt() % 42;
+
+		}
+
+		ArrayList<Integer> answers = new ArrayList<>();
+		for (int i : r) {
+
+			System.out.println(i);
+
+			for (int j = 0; j < answers.size(); j++) {
+				
+				if (r[i] == )
+				
+				
+			}
+
+		}
+
+	}
+
+}
